@@ -2,7 +2,7 @@ package poke
 
 // Berries are small fruits that can provide HP and status condition restoration,
 // stat enhancement, and even damage negation when eaten by Pokémon.
-type Berries struct {
+type Berry struct {
 	Firmness struct {
 		Name string `json:"name"`
 		URL  string `json:"url"`
