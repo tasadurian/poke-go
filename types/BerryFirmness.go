@@ -1,4 +1,4 @@
-package poke
+package pokego
 
 // BerriesFirmness
 type BerryFirmness struct {

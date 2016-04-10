@@ -1,4 +1,4 @@
-package poke
+package pokego
 
 // ContestType ...
 type ContestType struct {

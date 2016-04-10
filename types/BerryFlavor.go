@@ -1,4 +1,4 @@
-package poke
+package pokego
 
 // BerryFlavor
 type BerryFlavor struct {

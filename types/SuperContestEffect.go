@@ -1,4 +1,4 @@
-package poke
+package pokego
 
 // SuperContestEffect ...
 type SuperContestEffect struct {

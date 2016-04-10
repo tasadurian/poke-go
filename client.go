@@ -1,4 +1,4 @@
-package poke
+package pokego
 
 type client struct {
 	Pokemon string

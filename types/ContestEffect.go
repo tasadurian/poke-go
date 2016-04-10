@@ -1,4 +1,4 @@
-package poke
+package pokego
 
 // ContestEffect ...
 type ContestEffect struct {
