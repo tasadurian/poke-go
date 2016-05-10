@@ -1,4 +1,4 @@
-package typess
+package types
 
 // GrowthRate ...
 type GrowthRate struct {
