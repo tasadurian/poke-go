@@ -1,6 +1,6 @@
-package pokego
+package types
 
-// ItemAttribute
+// ItemAttribute ...
 type ItemAttribute struct {
 	Descriptions []struct {
 		Description string `json:"description"`

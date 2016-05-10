@@ -1,6 +1,6 @@
-package pokego
+package types
 
-// MoveTarget
+// MoveTarget ...
 type MoveTarget struct {
 	Descriptions []struct {
 		Description string `json:"description"`

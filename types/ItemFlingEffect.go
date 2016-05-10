@@ -1,6 +1,6 @@
-package pokego
+package types
 
-// ItemFlingEffect
+// ItemFlingEffect ...
 type ItemFlingEffect struct {
 	EffectEntries []struct {
 		Effect   string `json:"effect"`

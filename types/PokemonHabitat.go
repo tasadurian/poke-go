@@ -1,4 +1,4 @@
-package pokego
+package types
 
 // PokemonHabitat ...
 type PokemonHabitat struct {

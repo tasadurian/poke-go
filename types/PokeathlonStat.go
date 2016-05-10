@@ -1,5 +1,6 @@
-package pokego
+package types
 
+// PokeathlonStat ...
 type PokeathlonStat struct {
 	AffectingNatures struct {
 		Decrease []struct {

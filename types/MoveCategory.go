@@ -1,6 +1,6 @@
-package pokego
+package types
 
-// MoveCategory
+// MoveCategory ...
 type MoveCategory struct {
 	Descriptions []struct {
 		Description string `json:"description"`

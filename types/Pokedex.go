@@ -1,6 +1,6 @@
-package pokego
+package types
 
-// Pokedex
+// Pokedex ...
 type Pokedex struct {
 	Descriptions []struct {
 		Description string `json:"description"`

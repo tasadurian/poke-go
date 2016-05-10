@@ -1,6 +1,6 @@
-package pokego
+package types
 
-// ItemCategory
+// ItemCategory ...
 type ItemCategory struct {
 	ID    int `json:"id"`
 	Items []struct {

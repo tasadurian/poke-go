@@ -1,6 +1,6 @@
-package pokego
+package types
 
-// BerriesFirmness
+// BerryFirmness ...
 type BerryFirmness struct {
 	Berries []struct {
 		Name string `json:"name"`

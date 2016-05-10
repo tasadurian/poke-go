@@ -1,6 +1,6 @@
-package pokego
+package types
 
-// Region
+// Region ...
 type Region struct {
 	ID        int `json:"id"`
 	Locations []struct {

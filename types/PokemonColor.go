@@ -1,5 +1,6 @@
-package pokego
+package types
 
+// PokemonColor ...
 type PokemonColor struct {
 	ID    int    `json:"id"`
 	Name  string `json:"name"`

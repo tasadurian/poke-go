@@ -1,6 +1,6 @@
-package pokego
+package types
 
-// MoveBattleStyle
+// MoveBattleStyle ...
 type MoveBattleStyle struct {
 	ID    int    `json:"id"`
 	Name  string `json:"name"`

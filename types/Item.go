@@ -1,6 +1,6 @@
-package pokego
+package types
 
-// Item
+// Item ...
 type Item struct {
 	Attributes []struct {
 		Name string `json:"name"`

@@ -1,6 +1,6 @@
-package pokego
+package types
 
-// Version
+// Version ...
 type Version struct {
 	ID    int    `json:"id"`
 	Name  string `json:"name"`

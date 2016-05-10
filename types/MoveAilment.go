@@ -1,6 +1,6 @@
-package pokego
+package types
 
-// MoveAilment
+// MoveAilment ...
 type MoveAilment struct {
 	ID    int `json:"id"`
 	Moves []struct {

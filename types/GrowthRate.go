@@ -1,4 +1,4 @@
-package pokego
+package typess
 
 // GrowthRate ...
 type GrowthRate struct {

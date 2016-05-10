@@ -1,6 +1,6 @@
-package pokego
+package types
 
-// LocationArea
+// LocationArea ...
 type LocationArea struct {
 	EncounterMethodRates []struct {
 		EncounterMethod struct {

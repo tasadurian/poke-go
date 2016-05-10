@@ -1,6 +1,6 @@
-package pokego
+package types
 
-//Generation
+//Generation ...
 type Generation struct {
 	Abilities  []interface{} `json:"abilities"`
 	ID         int           `json:"id"`

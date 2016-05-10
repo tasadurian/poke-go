@@ -1,6 +1,6 @@
-package pokego
+package types
 
-// ItemPocket
+// ItemPocket ...
 type ItemPocket struct {
 	Categories []struct {
 		Name string `json:"name"`

@@ -1,4 +1,4 @@
-package pokego
+package types
 
 // Berries are small fruits that can provide HP and status condition restoration,
 // stat enhancement, and even damage negation when eaten by Pokémon.

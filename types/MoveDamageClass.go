@@ -1,6 +1,6 @@
-package pokego
+package types
 
-// MoveDamageClass
+// MoveDamageClass ...
 type MoveDamageClass struct {
 	Descriptions []struct {
 		Description string `json:"description"`

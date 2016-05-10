@@ -1,6 +1,6 @@
-package pokego
+package types
 
-// BerryFlavor
+// BerryFlavor ...
 type BerryFlavor struct {
 	Berries []struct {
 		Berry struct {

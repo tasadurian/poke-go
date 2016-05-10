@@ -1,6 +1,6 @@
-package pokego
+package types
 
-// EvolutionTrigger
+// EvolutionTrigger ...
 type EvolutionTrigger struct {
 	ID    int    `json:"id"`
 	Name  string `json:"name"`

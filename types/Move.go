@@ -1,6 +1,6 @@
-package pokego
+package types
 
-// Move
+// Move ...
 type Move struct {
 	Accuracy      int `json:"accuracy"`
 	ContestCombos struct {

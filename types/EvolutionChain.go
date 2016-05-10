@@ -1,6 +1,6 @@
-package pokego
+package types
 
-// EvolutionChain
+// EvolutionChain ...
 type EvolutionChain struct {
 	BabyTriggerItem interface{} `json:"baby_trigger_item"`
 	Chain           struct {

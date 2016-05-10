@@ -1,4 +1,4 @@
-package pokego
+package types
 
 // Pokemon ...
 type Pokemon struct {

@@ -1,6 +1,6 @@
-package pokego
+package types
 
-// VersionGroup
+// VersionGroup ...
 type VersionGroup struct {
 	Generation struct {
 		Name string `json:"name"`

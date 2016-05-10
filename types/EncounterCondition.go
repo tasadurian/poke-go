@@ -1,5 +1,6 @@
-package pokego
+package types
 
+// EncounterCondition ...
 type EncounterCondition struct {
 	ID    int    `json:"id"`
 	Name  string `json:"name"`

@@ -1,6 +1,6 @@
-package pokego
+package types
 
-// PalParkArea
+// PalParkArea ...
 type PalParkArea struct {
 	ID    int    `json:"id"`
 	Name  string `json:"name"`

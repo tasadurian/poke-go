@@ -1,4 +1,4 @@
-package pokego
+package types
 
 // Location ...
 type Location struct {

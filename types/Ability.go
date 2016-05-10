@@ -1,4 +1,4 @@
-package pokego
+package types
 
 // Ability ...
 type Ability struct {

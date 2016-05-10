@@ -1,4 +1,4 @@
-package pokego
+package types
 
 // Gender ...
 type Gender struct {

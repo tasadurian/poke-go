@@ -1,6 +1,6 @@
-package pokego
+package types
 
-// MoveLearnMethod
+// MoveLearnMethod ...
 type MoveLearnMethod struct {
 	Descriptions []struct {
 		Description string `json:"description"`

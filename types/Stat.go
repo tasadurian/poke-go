@@ -1,4 +1,4 @@
-package pokego
+package types
 
 // Stat ...
 type Stat struct {

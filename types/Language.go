@@ -1,4 +1,4 @@
-package pokego
+package types
 
 // Language ...
 type Language struct {
