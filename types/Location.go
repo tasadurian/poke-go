@@ -1,7 +1,7 @@
 package pokego
 
-// Location
-type LocationArea struct {
+// Location ...
+type Location struct {
 	Areas []struct {
 		Name string `json:"name"`
 		URL  string `json:"url"`
