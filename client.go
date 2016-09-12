@@ -3,7 +3,9 @@ package main
 import (
 	"encoding/json"
 	"errors"
+	"fmt"
 	"github.com/thetommytwitch/poke-go/types"
+	"io/ioutil"
 	"net/http"
 )
 
@@ -61,20 +63,59 @@ var dataMap = map[string]interface{}{
 	"version-group":             types.VersionGroup{},
 }
 
-// GetPokeData ...
-func GetPokeData(value string, pokemon string) (interface{}, error) {
+// Client ...
+type Client struct{}
 
-	res, err := http.Get(endpoint + value + "/" + pokemon + "/")
+// GetPokeData ...
+// make this concurent and add a timeout param
+func (c *Client) request(value string, items []string) ([][]byte, error) {
+
+	if items == nil {
+		return nil, errors.New("Err: No parameters found, need at least one item in slice")
+	}
+
+	var response [][]byte
+
+	for _, resource := range items {
+		res, err := http.Get(endpoint + value + "/" + resource + "/")
+		if err != nil {
+			return nil, err
+		}
+
+		body, err := ioutil.ReadAll(res.Body)
+		if err != nil {
+			return nil, err
+		}
+		response = append(response, body)
+	}
+
+	return response, nil
+}
+
+// GetAbility ...
+func (c *Client) GetAbility(items []string) ([]types.Ability, error) {
+	abilities := []types.Ability{}
+	responses, err := c.request("ability", items)
 	if err != nil {
 		return nil, err
 	}
-	defer res.Body.Close()
-	decoder := json.NewDecoder(res.Body)
-	for key, v := range dataMap {
-		if key == value {
-			decoder.Decode(&v)
-			return v, nil
+	for _, response := range responses {
+		a := types.Ability{}
+		err := json.Unmarshal(response, &a)
+		if err != nil {
+			return nil, err
 		}
+		abilities = append(abilities, a)
 	}
-	return nil, errors.New("Err: value not found.")
+	return abilities, nil
+}
+
+func main() {
+	client := new(Client)
+	params := []string{"1"}
+	ability, err := client.GetAbility(params)
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(ability)
 }
