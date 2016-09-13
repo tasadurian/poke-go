@@ -110,6 +110,42 @@ func (c *Client) GetAbility(items []string) ([]types.Ability, error) {
 	return abilities, nil
 }
 
+// GetBerry ...
+func (c *Client) GetBerry(items []string) ([]types.Berry, error) {
+	berries := []types.Berry{}
+	responses, err := c.request("berry", items)
+	if err != nil {
+		return nil, err
+	}
+	for _, response := range responses {
+		b := types.Berry{}
+		err := json.Unmarshal(response, &b)
+		if err != nil {
+			return nil, err
+		}
+		berries = append(berries, b)
+	}
+	return berries, nil
+}
+
+// GetBerryFirmness ...
+func (c *Client) GetBerryFirmness(items []string) ([]types.BerryFirmness, error) {
+	berries := []types.BerryFirmness{}
+	responses, err := c.request("berry-firmness", items)
+	if err != nil {
+		return nil, err
+	}
+	for _, response := range responses {
+		b := types.BerryFirmness{}
+		err := json.Unmarshal(response, &b)
+		if err != nil {
+			return nil, err
+		}
+		berries = append(berries, b)
+	}
+	return berries, nil
+}
+
 func main() {
 	client := new(Client)
 	params := []string{"1"}
